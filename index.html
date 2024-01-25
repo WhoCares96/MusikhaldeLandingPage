@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikhalde | Ardle</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 12%;
+            background-image: url('bg.jpg');
+            background-size: 82%;
+            background-position: top;
+            background-color: #060608;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-size: 4.4em;
+            color: rgb(160, 120, 40);
+            mix-blend-mode: difference;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: rgb(160, 120, 40);
+            mix-blend-mode: difference;
+            background-color: rgba(40, 30, 10, 0);
+            font-size: 2.2em;
+            border-radius: 5px;
+            width: 260px;
+        }
+
+        #impressum-toggle {
+            display: block;
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(160, 120, 40);
+            mix-blend-mode: difference;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Musikhalde | Ardle</h1>
+    <a href="https://open.spotify.com/intl-de/artist/0Sa76JyGhPYvv4H2HXXwfg" target="_blank"><b>/>Spotify</b></a>
+    <a href="https://soundcloud.com/ardle/" target="_blank"><b>/>SoundCloud</b></a>
+    <a href="https://www.youtube.com/channel/UCMrSNJ1ajIDKuKm9a_INSEw" target="_blank"><b>/>YouTube</b></a>
+    <a href="https://twitter.com/ArdleMusic/" target="_blank"><b>/>Twitter</b></a>
+
+
+    <div id="impressum-toggle" onclick="toggleImpressum()">Impressum</div>
+</body>
+
+<script>
+    function toggleImpressum() {
+        var impressumToggle = document.getElementById('impressum-toggle');
+
+        if (impressumToggle.textContent.includes('Impressum')) {
+            impressumToggle.textContent = 'Name: Arne Kuhle | E-Mail: arne.kuhle@web.de'
+        } else {
+            impressumToggle.textContent = 'Impressum';
+        }
+    }
+</script>
+
+
+
+</html>
